@@ -40,7 +40,7 @@ try:
     else:
         xbmcgui.Dialog().ok(addonname,subprocess.check_output(["/storage/hyperion/bin/hyperion-v4l2.sh","--video-standard","PAL","--width","240","--height","192","--screenshot"]))
     okno = xbmcgui.WindowDialog(xbmcgui.getCurrentWindowId())
-    obrazek = xbmcgui.ControlImage(0,0,1280,720,"/storage//screenshot.png")
+    obrazek = xbmcgui.ControlImage(0,0,1280,720,"/storage/screenshot.png")
     okno.addControl(obrazek)
     okno.show()
     obrazek.setVisible(True)
